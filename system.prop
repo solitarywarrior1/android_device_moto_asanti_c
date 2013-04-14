@@ -2,6 +2,7 @@
 rild.libpath=/system/lib/libril-qc-qmi-1.so
 rild.libargs=-d /dev/smd0
 ril.subscription.types=NV,RUIM
+ro.telephony.ril.v3=subscriptionFromSource,skipCdmaSubcription
 keyguard.no_require_sim=true
 ro.use_data_netmgrd=true
 ro.ril.transmitpower=true
@@ -13,10 +14,39 @@ ro.qc.sdk.audio.fluencetype=fluence
 persist.audio.handset.mic=digital
 ro.config.vc_call_vol_steps=7
 persist.timed.enable=true
-ro.telephony.ril.v3=signalstrength
+DEVICE_PROVISIONED=1
+#Added or Modded by Solitarywarrior1
+#from d2spr
+ro.telephony.default_network=8
+telephony.lteOnCdmaDevice=1
+ro.config.svlte1x=true
+gsm.sim.operator.alpha = sprint
+gsm.sim.operator.numeric = 310120
+gsm.sim.operator.iso-country = us
+gsm.operator.alpha = sprint
+gsm.operator.numeric = 310120
+gsm.operator.iso-country = us
 ro.cdma.home.operator.numeric=310120
 ro.cdma.home.operator.alpha=Sprint
 ro.telephony.default_network=8
-telephony.lteOnCdmaDevice=1
-telephony.sms.pseudo_multipart=1
-DEVICE_PROVISIONED=1
+keyguard.no_require_sim=true
+ro.telephony.ril.v3=skipnullaid
+#from jewel
+ro.ril.hsxpa=3
+ro.ril.gprsclass=12
+ro.ril.hsdpa.category = 10
+ro.ril.hsupa.category = 6
+ro.ril.enable.dtm=0
+ro.telephony.call_ring.multiple=0
+ro.ril.transmitpower=true
+ro.use_data_netmgrd=true
+persist.data_netmgrd_nint=16
+persist.data_netmgrd_mtu=1428
+persist.cne.UseCne=false
+ro.ril.disable.power.collapse = 1
+persist.radio.add_power_save=1
+persist.radio.snapshot_disabled=1
+#from twisted asanti
+ro.ril.hep=1
+ro.ril.enable.a53=1
+ro.ril.enable.3g.prefix=1
