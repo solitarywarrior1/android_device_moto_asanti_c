@@ -31,6 +31,7 @@ ro.cdma.home.operator.alpha=Sprint
 ro.telephony.default_network=8
 keyguard.no_require_sim=true
 ro.telephony.ril.v3=skipnullaid
+telephony.sms.pseudo_multipart=1
 #from jewel
 ro.ril.hsxpa=3
 ro.ril.gprsclass=12
