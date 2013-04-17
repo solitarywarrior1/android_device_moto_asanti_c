@@ -47,7 +47,5 @@ persist.cne.UseCne=false
 ro.ril.disable.power.collapse = 1
 persist.radio.add_power_save=1
 persist.radio.snapshot_disabled=1
-#from twisted asanti
-ro.ril.hep=1
-ro.ril.enable.a53=1
+# other
 ro.ril.enable.3g.prefix=1
