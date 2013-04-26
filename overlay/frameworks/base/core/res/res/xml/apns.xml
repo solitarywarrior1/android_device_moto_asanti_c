@@ -1,182 +1,180 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html><head><title>test-apns-conf_sprint.xml - device/samsung/toroplus - Git at Google</title><link rel="stylesheet" type="text/css" href="//www.google.com/css/go.css" /><link rel="stylesheet" type="text/css" href="/+static/prettify/prettify.vf-M93Ay4IiiWRQSJKPGWQ.cache.css" /><link rel="stylesheet" type="text/css" href="/+static/gitiles.sc1AQ5sZBtrPTWvjf0CFrw.cache.css" /><script src="/+static/prettify/prettify_compiled.Ekv3DatFVI76TgHdVEJxAQ.cache.js" type="text/javascript"></script></head><body onload="prettyPrint()"><h1><img src="//www.google.com/images/logo_sm.gif" alt="Google" />Git</h1><div class="menu"> <a href="https://www.google.com/accounts/ServiceLogin?service=gerritcodereview&amp;continue=https://android.googlesource.com/login/device/samsung/toroplus/%2B/jb-dev/test-apns-conf_sprint.xml">Sign in</a> </div><div class="breadcrumbs"><a href="/?format=HTML">android</a> / <a href="/device/samsung/toroplus/">device/samsung/toroplus</a> / <a href="/device/samsung/toroplus/+/jb-dev">jb-dev</a> / <a href="/device/samsung/toroplus/+/jb-dev/">.</a> / test-apns-conf_sprint.xml</div><div class="sha1">blob: 55e7643b459e0c85c3575e6b89d3156ff6b91fa2 [<a href="/device/samsung/toroplus/+log/jb-dev/test-apns-conf_sprint.xml">file history</a>]</div><pre class="git-blob prettyprint linenums lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-&lt;!--
+<?xml version="1.0" encoding="utf-8"?>
+<!--
 /*
 ** Copyright 2006, Google Inc.
 **
-** Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
 ** You may obtain a copy of the License at
 **
 **     http://www.apache.org/licenses/LICENSE-2.0
 **
 ** Unless required by applicable law or agreed to in writing, software
-** distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+** distributed under the License is distributed on an "AS IS" BASIS,
 ** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 ** See the License for the specific language governing permissions and
 ** limitations under the License.
 */
---&gt;
+-->
 
-&lt;!-- use empty string to specify no proxy or port --&gt;
-&lt;!-- This version must agree with that in apps/common/res/apns.xml --&gt;
-&lt;apns version=&quot;7&quot;&gt;
-    &lt;!-- Start of Apn database for Sprint LTE support --&gt;
-    &lt;apn carrier=&quot;ota&quot;
-        mcc=&quot;310&quot;
-        mnc=&quot;120&quot;
-        apn=&quot;otasn&quot;
-        type=&quot;fota&quot;
-        protocol=&quot;IPV4V6&quot;
-        roaming_protocol=&quot;IPV4V6&quot;
-        bearer=&quot;14&quot;
-    /&gt;
+<!-- use empty string to specify no proxy or port -->
+<!-- This version must agree with that in apps/common/res/apns.xml -->
+<apns version="7">
+    <!-- Start of Apn database for Sprint LTE support -->
+    <apn carrier="ota"
+        mcc="310"
+        mnc="120"
+        apn="otasn"
+        type="fota"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        bearer="14"
+    />
 
-    &lt;apn carrier=&quot;LTE - SPRINT test ISP&quot;
-        mcc=&quot;001&quot;
-        mnc=&quot;010&quot;
-        apn=&quot;n.ispsn&quot;
-        type=&quot;default, mms&quot;
-        mmsc=&quot;http://mms.sprintpcs.com&quot;
-        mmsproxy = &quot;68.28.31.7&quot;
-        mmsport = &quot;80&quot;
-        protocol=&quot;IPV4V6&quot;
-        roaming_protocol=&quot;IPV4V6&quot;
-        bearer=&quot;14&quot;
-    /&gt;
+    <apn carrier="LTE - SPRINT test ISP"
+        mcc="001"
+        mnc="010"
+        apn="n.ispsn"
+        type="default, mms"
+        mmsc="http://mms.sprintpcs.com"
+        mmsproxy = "68.28.31.7"
+        mmsport = "80"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        bearer="14"
+    />
 
-    &lt;apn carrier=&quot;LTE - SPRINT test OTA&quot;
-        mcc=&quot;001&quot;
-        mnc=&quot;010&quot;
-        apn=&quot;otasn&quot;
-        type=&quot;fota&quot;
-        protocol=&quot;IPV4V6&quot;
-        roaming_protocol=&quot;IPV4V6&quot;
-        bearer=&quot;14&quot;
-    /&gt;
+    <apn carrier="LTE - SPRINT test OTA"
+        mcc="001"
+        mnc="010"
+        apn="otasn"
+        type="fota"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        bearer="14"
+    />
 
-    &lt;apn carrier=&quot;LTE - SPRINT test PAM&quot;
-        mcc=&quot;001&quot;
-        mnc=&quot;010&quot;
-        apn=&quot;pamsn&quot;
-        type=&quot;dun&quot;
-        protocol=&quot;IPV4V6&quot;
-        roaming_protocol=&quot;IPV4V6&quot;
-        bearer=&quot;14&quot;
-    /&gt;
+    <apn carrier="LTE - SPRINT test PAM"
+        mcc="001"
+        mnc="010"
+        apn="pamsn"
+        type="dun"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        bearer="14"
+    />
 
-    &lt;apn carrier=&quot;LTE - SPRINT test ISP&quot;
-        mcc=&quot;001&quot;
-        mnc=&quot;01&quot;
-        apn=&quot;n.ispsn&quot;
-        type=&quot;default, mms&quot;
-        mmsc=&quot;http://mms.sprintpcs.com&quot;
-        mmsproxy = &quot;68.28.31.7&quot;
-        mmsport = &quot;80&quot;
-        protocol=&quot;IPV4V6&quot;
-        roaming_protocol=&quot;IPV4V6&quot;
-        bearer=&quot;14&quot;
-    /&gt;
+    <apn carrier="LTE - SPRINT test ISP"
+        mcc="001"
+        mnc="01"
+        apn="n.ispsn"
+        type="default, mms"
+        mmsc="http://mms.sprintpcs.com"
+        mmsproxy = "68.28.31.7"
+        mmsport = "80"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        bearer="14"
+    />
 
-    &lt;apn carrier=&quot;LTE - SPRINT test OTA&quot;
-        mcc=&quot;001&quot;
-        mnc=&quot;01&quot;
-        apn=&quot;otasn&quot;
-        type=&quot;fota&quot;
-        protocol=&quot;IPV4V6&quot;
-        roaming_protocol=&quot;IPV4V6&quot;
-        bearer=&quot;14&quot;
-    /&gt;
+    <apn carrier="LTE - SPRINT test OTA"
+        mcc="001"
+        mnc="01"
+        apn="otasn"
+        type="fota"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        bearer="14"
+    />
 
-    &lt;apn carrier=&quot;LTE - SPRINT test PAM&quot;
-        mcc=&quot;001&quot;
-        mnc=&quot;01&quot;
-        apn=&quot;pamsn&quot;
-        type=&quot;dun&quot;
-        protocol=&quot;IPV4V6&quot;
-        roaming_protocol=&quot;IPV4V6&quot;
-        bearer=&quot;14&quot;
-    /&gt;
+    <apn carrier="LTE - SPRINT test PAM"
+        mcc="001"
+        mnc="01"
+        apn="pamsn"
+        type="dun"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        bearer="14"
+    />
 
-    &lt;!-- End of Apn database for Sprint LTE support --&gt;
+    <!-- End of Apn database for Sprint LTE support -->
 
-    &lt;!-- Start of Apn database for Sprint EHRPD support --&gt;
-    &lt;apn carrier=&quot;ota&quot;
-        mcc=&quot;310&quot;
-        mnc=&quot;120&quot;
-        apn=&quot;otasn&quot;
-        type=&quot;fota&quot;
-        protocol=&quot;IPV4V6&quot;
-        roaming_protocol=&quot;IPV4V6&quot;
-        bearer=&quot;13&quot;
-    /&gt;
+    <!-- Start of Apn database for Sprint EHRPD support -->
+    <apn carrier="ota"
+        mcc="310"
+        mnc="120"
+        apn="otasn"
+        type="fota"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        bearer="13"
+    />
 
-    &lt;apn carrier=&quot;EHRPD - SPRINT test ISP&quot;
-        mcc=&quot;001&quot;
-        mnc=&quot;010&quot;
-        apn=&quot;n.ispsn&quot;
-        type=&quot;default, mms&quot;
-        mmsc=&quot;http://mms.sprintpcs.com&quot;
-        mmsproxy = &quot;68.28.31.7&quot;
-        mmsport = &quot;80&quot;
-        protocol=&quot;IPV4V6&quot;
-        roaming_protocol=&quot;IPV4V6&quot;
-        bearer=&quot;13&quot;
-    /&gt;
+    <apn carrier="EHRPD - SPRINT test ISP"
+        mcc="001"
+        mnc="010"
+        apn="n.ispsn"
+        type="default, mms"
+        mmsc="http://mms.sprintpcs.com"
+        mmsproxy = "68.28.31.7"
+        mmsport = "80"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        bearer="13"
+    />
 
-    &lt;apn carrier=&quot;EHRPD - SPRINT test OTA&quot;
-        mcc=&quot;001&quot;
-        mnc=&quot;010&quot;
-        apn=&quot;otasn&quot;
-        type=&quot;fota&quot;
-        protocol=&quot;IPV4V6&quot;
-        roaming_protocol=&quot;IPV4V6&quot;
-        bearer=&quot;13&quot;
-    /&gt;
+    <apn carrier="EHRPD - SPRINT test OTA"
+        mcc="001"
+        mnc="010"
+        apn="otasn"
+        type="fota"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        bearer="13"
+    />
 
-    &lt;apn carrier=&quot;EHRPD - SPRINT test PAM&quot;
-        mcc=&quot;001&quot;
-        mnc=&quot;010&quot;
-        apn=&quot;pamsn&quot;
-        type=&quot;dun&quot;
-        protocol=&quot;IPV4V6&quot;
-        roaming_protocol=&quot;IPV4V6&quot;
-        bearer=&quot;13&quot;
-    /&gt;
+    <apn carrier="EHRPD - SPRINT test PAM"
+        mcc="001"
+        mnc="010"
+        apn="pamsn"
+        type="dun"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        bearer="13"
+    />
 
-    &lt;apn carrier=&quot;EHRPD - SPRINT test ISP&quot;
-        mcc=&quot;001&quot;
-        mnc=&quot;01&quot;
-        apn=&quot;n.ispsn&quot;
-        type=&quot;default, mms&quot;
-        mmsc=&quot;http://mms.sprintpcs.com&quot;
-        mmsproxy = &quot;68.28.31.7&quot;
-        mmsport = &quot;80&quot;
-        protocol=&quot;IPV4V6&quot;
-        roaming_protocol=&quot;IPV4V6&quot;
-        bearer=&quot;13&quot;
-    /&gt;
+    <apn carrier="EHRPD - SPRINT test ISP"
+        mcc="001"
+        mnc="01"
+        apn="n.ispsn"
+        type="default, mms"
+        mmsc="http://mms.sprintpcs.com"
+        mmsproxy = "68.28.31.7"
+        mmsport = "80"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        bearer="13"
+    />
 
-    &lt;apn carrier=&quot;EHRPD - SPRINT test OTA&quot;
-        mcc=&quot;001&quot;
-        mnc=&quot;01&quot;
-        apn=&quot;otasn&quot;
-        type=&quot;fota&quot;
-        protocol=&quot;IPV4V6&quot;
-        roaming_protocol=&quot;IPV4V6&quot;
-        bearer=&quot;13&quot;
-    /&gt;
+    <apn carrier="EHRPD - SPRINT test OTA"
+        mcc="001"
+        mnc="01"
+        apn="otasn"
+        type="fota"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        bearer="13"
+    />
 
-    &lt;apn carrier=&quot;EHRPD - SPRINT test PAM&quot;
-        mcc=&quot;001&quot;
-        mnc=&quot;01&quot;
-        apn=&quot;pamsn&quot;
-        type=&quot;dun&quot;
-        protocol=&quot;IPV4V6&quot;
-        roaming_protocol=&quot;IPV4V6&quot;
-        bearer=&quot;13&quot;
-    /&gt;
+    <apn carrier="EHRPD - SPRINT test PAM"
+        mcc="001"
+        mnc="01"
+        apn="pamsn"
+        type="dun"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        bearer="13"
+    />
 
-    &lt;!-- End of Apn database for Sprint EHRPD support --&gt;
-&lt;/apns&gt;
-
-</pre><div class="footer">Powered by <a href="https://code.google.com/p/gitiles/">Gitiles</a></div></body></html>
+    <!-- End of Apn database for Sprint EHRPD support -->
+</apns>
