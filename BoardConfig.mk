@@ -1,3 +1,5 @@
+USE_CAMERA_STUB := true
+
 # inherit from platform common
 -include device/motorola/msm8960-common/BoardConfigCommon.mk
 
