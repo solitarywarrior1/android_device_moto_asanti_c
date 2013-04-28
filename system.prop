@@ -28,7 +28,6 @@ gsm.operator.numeric = 310120
 gsm.operator.iso-country = us
 ro.cdma.home.operator.numeric=310120
 ro.cdma.home.operator.alpha=Sprint
-ro.telephony.default_network=8
 keyguard.no_require_sim=true
 ro.telephony.ril.v3=skipnullaid
 telephony.sms.pseudo_multipart=1
