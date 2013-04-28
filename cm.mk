@@ -17,5 +17,5 @@ PRODUCT_NAME := cm_xt897c
 
 $(call inherit-product, device/motorola/xt897c/full_xt897c.mk)
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_BRAND=motorola PRODUCT_NAME=xt897c BUILD_PRODUCT=xt897c BUILD_FINGERPRINT=motorola/XT897_us_spr/asanti_c:4.1.2/9.8.2Q-122_XT897_FFW-5/6:user/release-keys
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_BRAND=motorola PRODUCT_NAME=xt897c PRODUCT_DEVICE=xt897c BUILD_FINGERPRINT=motorola/XT897_us_spr/asanti_c:4.1.2/9.8.2Q-122_XT897_FFW-5/6:user/release-keys
 
