@@ -1,4 +1,3 @@
-
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
@@ -37,7 +36,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
     telephony.lteOnCdmaDevice=1 \
     ro.telephony.ril.v3=signalstrength \
     DEVICE_PROVISIONED=1 \
-    ro.telephony.default_network=8
+    ro.telephony.default_network=8 \
+    ro.config.svlte1x=true \
+    gsm.sim.operator.alpha = sprint \
+    gsm.sim.operator.numeric = 310120 \
+    gsm.sim.operator.iso-country = us \
+    gsm.operator.alpha = sprint \
+    gsm.operator.numeric = 310120 \
+    gsm.operator.iso-country = us \
+    ro.cdma.home.operator.numeric=310120 \
+    ro.cdma.home.operator.alpha=Sprint
 
 # IDC
 PRODUCT_COPY_FILES += \
