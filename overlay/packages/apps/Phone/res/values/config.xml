@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
 <!-- Copyright (C) 2011 The Android Open Source Project
-=======
-<!-- Copyright (C) 2009 The Android Open Source Project
->>>>>>> probable mms fix and add system select options
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -18,7 +14,6 @@
      limitations under the License.
 -->
 
-<<<<<<< HEAD
 <!-- Asanti C - specific phone app resources. -->
 <resources>
 
@@ -26,10 +21,3 @@
     <bool name="sprint_mwi_quirk">true</bool>
 
 </resources>
-=======
-<resources>
-    <!-- Sprint Message Wait Indicator Quirk -->
-    <bool name="sprint_mwi_quirk">true</bool>
-
-</resources>
->>>>>>> probable mms fix and add system select options
