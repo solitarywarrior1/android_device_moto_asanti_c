@@ -11,7 +11,6 @@ persist.rild.nitz_short_ons_1=
 persist.rild.nitz_short_ons_2=
 persist.rild.nitz_short_ons_3=
 ril.subscription.types=NV,RUIM
-ro.telephony.ril.v3=subscriptionFromSource,skipCdmaSubcription
 keyguard.no_require_sim=true
 ro.use_data_netmgrd=true
 ro.ril.transmitpower=true
@@ -25,6 +24,7 @@ ro.config.vc_call_vol_steps=7
 persist.timed.enable=true
 DEVICE_PROVISIONED=1
 #Added or Modded by Solitarywarrior1
+ro.telephony.ril.v3=subscriptionFromSource,skipCdmaSubcription
 #from d2spr
 ro.telephony.default_network=8
 telephony.lteOnCdmaDevice=1
