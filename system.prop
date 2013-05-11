@@ -47,3 +47,9 @@ persist.radio.add_power_save=1
 persist.radio.snapshot_disabled=1
 # other
 ro.ril.enable.3g.prefix=1
+# from 10.1
+ro.cdma.subscription=1
+telephony.rilV7NeedCDMALTEPhone=true
+ro.cdma.homesystem=64,65,76,77,78,79,80,81,82,83
+ro.mot.deep.sleep.supported=true
+ro.mot.hw.uaprof=http://device.sprintpcs.com/Motorola/XT897/latest
