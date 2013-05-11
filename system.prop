@@ -42,9 +42,6 @@ ro.telephony.ril.v3=skipnullaid
 telephony.sms.pseudo_multipart=1
 #from jewel
 ro.use_data_netmgrd=true
-persist.data_netmgrd_nint=16
-persist.data_netmgrd_mtu=1428
-persist.cne.UseCne=false
 ro.ril.disable.power.collapse = 1
 persist.radio.add_power_save=1
 persist.radio.snapshot_disabled=1
