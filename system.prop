@@ -10,7 +10,7 @@ persist.rild.nitz_short_ons_0=
 persist.rild.nitz_short_ons_1=
 persist.rild.nitz_short_ons_2=
 persist.rild.nitz_short_ons_3=
-ril.subscription.types=NV,RUIM
+ril.subscription.types=NV
 keyguard.no_require_sim=true
 ro.use_data_netmgrd=true
 ro.ril.transmitpower=true
@@ -45,6 +45,9 @@ ro.use_data_netmgrd=true
 ro.ril.disable.power.collapse = 1
 persist.radio.add_power_save=1
 persist.radio.snapshot_disabled=1
+persist.data_netmgrd_nint=16
+persist.data_netmgrd_mtu=1428
+persist.cne.UseCne=false
 # other
 ro.ril.enable.3g.prefix=1
 # from 10.1
