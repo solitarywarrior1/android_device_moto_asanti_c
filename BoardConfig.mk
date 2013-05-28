@@ -4,7 +4,7 @@ USE_CAMERA_STUB := true
 -include device/moto/msm8960-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/moto/asanti_c/BoardConfigVendor.mk
+-include vendor/motorola/xt897/BoardConfigVendor.mk
 
 LOCAL_PATH := device/moto/asanti_c
 
