@@ -148,4 +148,4 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/config/gps.conf:system/etc/gps.conf \
 
-$(call inherit-product-if-exists, vendor/moto/asanti_c/asanti_c-vendor.mk)
+$(call inherit-product-if-exists, vendor/motorola/xt897/xt897-vendor.mk)
